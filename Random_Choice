@@ -6,15 +6,31 @@ for i in range(5):
     guess = int(input("Guess a number between 1 and 100 : "))
 
     if guess == number:
-        print("Congrats! 🎉 Correct guess!")
+        print("Congrats! Correct guess!")
         break
 
     elif guess < number:
-        print("Oops! Your guess is too low. 📉")
+        print("Oops! Your guess is too low.")
 
     else:
-        print("Oops! Your guess is too high. 📈")
+        print("Oops! Your guess is too high.")
 
 if guess != number:
     print("The correct number was:", number)
+
+
+
+Expected Output
+
+Guess a number between 1 and 100 :  56
+Oops! Your guess is too high.
+Guess a number between 1 and 100 :  32
+Oops! Your guess is too low.
+Guess a number between 1 and 100 :  45
+Oops! Your guess is too low.
+Guess a number between 1 and 100 :  50
+Oops! Your guess is too low.
+Guess a number between 1 and 100 :  55
+Oops! Your guess is too high.
+The correct number was: 53
 
